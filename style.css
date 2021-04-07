@@ -1,0 +1,22 @@
+* {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+svg {
+    stroke-dasharray: 563;
+    animation: draw 2s forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: -563;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
